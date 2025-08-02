@@ -12,3 +12,6 @@ SELECT Nome, Ano, Duracao FROM Filmes WHERE Ano = 1997;
 
 -- DESAFIO 05 - Buscar os filmes lançados APÓS o ano 2000
 SELECT Nome, Ano, Duracao FROM Filmes WHERE Ano >2000;
+
+-- DESAFIO 06 _ Buscar os filmes com a duracao maior que 100 e menor que 150, ordenando pela duracao em ordem crescente
+SELECT Nome, Ano, Duracao FROM Filmes WHERE Duracao > 100 AND Duracao < 150 ORDER BY Duracao ASC;
