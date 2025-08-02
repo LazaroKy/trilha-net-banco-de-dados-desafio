@@ -29,3 +29,8 @@ SELECT Id, PrimeiroNome, UltimoNome, Genero FROM Atores WHERE Genero = 'F' ORDER
 SELECT Nome, Genero FROM Filmes 
 INNER JOIN FilmesGenero ON Filmes.Id = FilmesGenero.IdFilme 
 INNER JOIN Generos ON FilmesGenero.IdGenero = Generos.Id;
+
+-- DESAFIO 11 - Buscar o nome do filme e o gênero do tipo "Mistério"
+SELECT Nome, Genero FROM Filmes 
+INNER JOIN FilmesGenero ON Filmes.Id = FilmesGenero.IdFilme 
+INNER JOIN Generos ON FilmesGenero.IdGenero = Generos.Id WHERE Genero = 'Mistério';
