@@ -34,3 +34,8 @@ INNER JOIN Generos ON FilmesGenero.IdGenero = Generos.Id;
 SELECT Nome, Genero FROM Filmes 
 INNER JOIN FilmesGenero ON Filmes.Id = FilmesGenero.IdFilme 
 INNER JOIN Generos ON FilmesGenero.IdGenero = Generos.Id WHERE Genero = 'Mistério';
+
+-- DESAFIO 12 - Buscar o nome do filme e os atores, trazendo o PrimeiroNome, UltimoNome e seu Papel
+SELECT Nome, PrimeiroNome, UltimoNome, Papel FROM Filmes 
+INNER JOIN ElencoFilme ON Filmes.Id = ElencoFilme.IdFilme 
+INNER JOIN Atores ON ElencoFilme.IdAtor = Atores.Id ;
