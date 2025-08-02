@@ -18,3 +18,6 @@ SELECT Nome, Ano, Duracao FROM Filmes WHERE Duracao > 100 AND Duracao < 150 ORDE
 
 -- DESAFIO 07 - Buscar a quantidade de filmes lançadas no ano, agrupando por ano, ordenando pela duracao em ordem decrescente
 SELECT Ano, COUNT(Ano) Quantidade FROM Filmes GROUP BY Ano ORDER BY Quantidade DESC;
+
+-- DESAFIO 08 - Buscar os Atores do gênero masculino, retornando o PrimeiroNome, UltimoNome
+SELECT Id, PrimeiroNome, UltimoNome, Genero FROM Atores WHERE Genero = 'M';
