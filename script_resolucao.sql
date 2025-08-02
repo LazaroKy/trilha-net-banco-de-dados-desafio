@@ -21,3 +21,6 @@ SELECT Ano, COUNT(Ano) Quantidade FROM Filmes GROUP BY Ano ORDER BY Quantidade D
 
 -- DESAFIO 08 - Buscar os Atores do gênero masculino, retornando o PrimeiroNome, UltimoNome
 SELECT Id, PrimeiroNome, UltimoNome, Genero FROM Atores WHERE Genero = 'M';
+
+-- DESAFIO 09 - Buscar os Atores do gênero feminino, retornando o PrimeiroNome, UltimoNome, e ordenando pelo PrimeiroNome
+SELECT Id, PrimeiroNome, UltimoNome, Genero FROM Atores WHERE Genero = 'F' ORDER BY PrimeiroNome ASC;
